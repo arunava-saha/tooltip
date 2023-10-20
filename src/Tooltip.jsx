@@ -1,27 +1,9 @@
 import React, { Children, useEffect, useState } from "react";
 
-const Tooltip = ({ text, position, children }) => {
+const Tooltip = ({ text, pos, children }) => {
   const [tooltip, setTooltip] = useState(false);
-  const [pos, setPos] = useState(position);
-
-  const positionChanger = () => {
-    if (pos === "left") {
-      setPos("top");
-    } else if (pos === "top") {
-      setPos("bottom");
-    } else if (pos === "bottom") {
-      setPos("right");
-    } else {
-      setPos("left");
-    }
-  };
   return (
     <>
-      {
-        <p className="logo" onClick={positionChanger}>
-          positioned: {pos}
-        </p>
-      }
       <div
         className="tool"
         onMouseEnter={() => setTooltip(true)}

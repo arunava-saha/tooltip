@@ -9,6 +9,7 @@
   height: 2em;
   padding: 1em;
   will-change: filter;
+  text-transform: capitalize;
   transition: filter 300ms;
   background: #ff2200;
   color: #171717;
