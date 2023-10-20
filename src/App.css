@@ -1,0 +1,110 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 2em;
+  padding: 1em;
+  will-change: filter;
+  transition: filter 300ms;
+  background: #ff2200;
+  color: #171717;
+  font-size: larger;
+  border-radius: 50px;
+  margin-bottom: 70px;
+  font-weight: 500;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  color: #0ff;
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.tool {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.tooltip {
+  background: #a3f69d;
+  color: #124556;
+  font-weight: 400;
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+.arrow {
+  background: #a3f69d;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.top {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100%;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+  margin-left: 5px;
+  border-radius: 8px;
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+  margin-right: 5px;
+  border-radius: 8px;
+}
+.bottom {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  margin-top: 5px;
+  border-radius: 8px;
+}
+
+.t-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.t-bottom {
+  border-width: 0 6px 6px 6px;
+  top: 79%;
+  border-color: transparent transparent #a3f69d transparent;
+}
+
+.t-top {
+  border-width: 6px 6px 0 6px;
+  bottom: 79%;
+  border-color: #a3f69d transparent transparent transparent;
+}
+
+.t-right {
+  border-width: 6px 6px 6px 0;
+  left: 96%;
+  border-color: transparent #a3f69d transparent transparent;
+}
+
+.t-left {
+  border-width: 6px 0 6px 6px;
+  right: 96%;
+  border-color: transparent transparent transparent #a3f69d;
+}
